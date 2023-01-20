@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../vendor/picocss/pico/css/pico.min.css">
+    <link rel="stylesheet" href="design/header.css">
+    <link rel="stylesheet" href="design/color/yellow.css">
+    <title>Simple Chat App</title>
+</head>
+<body onload="onLoad()" >
+    <div id="header">
+        <nav class="container">
+            <ul>
+                <li><b>Simple Chat App</b></li>
+            </ul>
+            <ul>
+                <li>
+                    <div role="button" class="contrast outline" onclick="themeChange()">Theme</div>
+                </li>
+                <li>
+                    <details role="list">
+                        <summary aria-haspopup="listbox" role="button">Primary Color</summary>
+                        <ul role="listbox">
+                            <li>
+                                <label for="red">
+                                    <input type="radio" id="red" name="color" value="red" onchange="colorChange()">
+                                    Red
+                                </label>
+                            </li>
+                            <li>
+                                <label for="pink">
+                                    <input type="radio" id="pink" name="color" value="pink" onchange="colorChange()">
+                                    Pink
+                                </label>
+                            </li>
+                            <li>
+                                <label for="purple">
+                                    <input type="radio" id="purple" name="color" value="purple" onchange="colorChange()">
+                                    Purple
+                                </label>
+                            </li>
+                            <li>
+                                <label for="deep-purple">
+                                    <input type="radio" id="deep-purple" name="color" value="deep-purple" onchange="colorChange()">
+                                    Deep-purple
+                                </label>
+                            </li>
+                            <li>
+                                <label for="indigo">
+                                    <input type="radio" id="indigo" name="color" value="indigo" onchange="colorChange()">
+                                    Indigo
+                                </label>
+                            </li>
+                            <li>
+                                <label for="blue">
+                                    <input type="radio" id="blue" name="color" value="blue" onchange="colorChange()">
+                                    Blue
+                                </label>
+                            </li>
+                            <li>
+                                <label for="light-blue">
+                                    <input type="radio" id="light-blue" name="color" value="light-blue" onchange="colorChange()">
+                                    Light-blue
+                                </label>
+                            </li>
+                            <li>
+                                <label for="cyan">
+                                    <input type="radio" id="cyan" name="color" value="cyan" onchange="colorChange()">
+                                    Cyan
+                                </label>
+                            </li>
+                            <li>
+                                <label for="teal">
+                                    <input type="radio" id="teal" name="color" value="teal" onchange="colorChange()">
+                                    Teal
+                                </label>
+                            </li>
+                            <li>
+                                <label for="green">
+                                    <input type="radio" id="green" name="color" value="green" onchange="colorChange()">
+                                    Green
+                                </label>
+                            </li>
+                            <li>
+                                <label for="light-green">
+                                    <input type="radio" id="light-green" name="color" value="light-green" onchange="colorChange()">
+                                    Light-green
+                                </label>
+                            </li>
+                            <li>
+                                <label for="lime">
+                                    <input type="radio" id="lime" name="color" value="lime" onchange="colorChange()">
+                                    Lime
+                                </label>
+                            </li>
+                            <li>
+                                <label for="yellow">
+                                    <input type="radio" id="yellow" name="color" value="yellow" onchange="colorChange()">
+                                    Yellow
+                                </label>
+                            </li>
+                            <li>
+                                <label for="amber">
+                                    <input type="radio" id="amber" name="color" value="amber" onchange="colorChange()">
+                                    Amber
+                                </label>
+                            </li>
+                            <li>
+                                <label for="orange">
+                                    <input type="radio" id="orange" name="color" value="orange" onchange="colorChange()">
+                                    Orange
+                                </label>
+                            </li>
+                            <li>
+                                <label for="deep-orange">
+                                    <input type="radio" id="deep-orange" name="color" value="deep-orange" onchange="colorChange()">
+                                    Deep-orange
+                                </label>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="content">
+        <main class="container">
+            <div class="message-list"></div>
+        </main>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <form class="message-form" onsubmit="formSubmit(event)">
+                <label>
+                    What do you want to say ?
+                    <input id="chat" type="text" size="40" autocomplete="off" placeholder="Type here..." />
+                </label>
+                <button role="button">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script src="app.js"></script>

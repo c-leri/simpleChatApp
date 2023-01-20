@@ -1,0 +1,32 @@
+/* For non scrolling nav-bar */
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+}
+
+#content {
+    overflow: auto;
+    position: absolute;
+    width: 100%;
+    top: 4rem;
+    bottom: 10rem;
+}
+
+#footer {
+    position: absolute;
+    width: 100%;
+    height: 10rem;
+    bottom: 0;
+}

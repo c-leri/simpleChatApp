@@ -1,0 +1,19 @@
+{
+    "name": "bouccele/ratchet-test",
+    "require": {
+        "cboden/ratchet": "^0.4.4",
+        "picocss/pico": "^1.5",
+      "ext-json": "*"
+    },
+    "autoload": {
+      "psr-4": {
+        "Celeri\\ChatApp\\": "src/"
+      }
+    },
+    "authors": [
+        {
+            "name": "bouccele",
+            "email": "celestin.bouchet@etu.univ-grenoble-alpes.fr"
+        }
+    ]
+}
